@@ -1,0 +1,46 @@
+.header {
+
+    nav {
+        padding: 2.1rem;
+        background-color: $black
+    }
+
+    &__logo {
+
+        img {
+            max-width: 200px;
+        }
+    }
+
+    &__hamburger {
+
+     > span {
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: $offWhite;
+
+        &:not(:last-child) {
+            margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__links {
+
+        a {
+            font-size: $font-small;
+            color: $offWhite;
+            transition: color 200ms ease-in-out;
+
+            &:not(:last-child){
+                margin-right: 40px;
+            }
+
+            &:hover {
+                color: $darkWhite;
+
+            }
+        }
+    }
+}

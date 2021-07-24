@@ -1,33 +1,12 @@
-html {
-    font-size: 100%;
-    box-sizing: border-box;
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
-body {
-    margin: 0;
-    padding: 2rem;
-    background-color: rgb(10, 10, 41);
-    color: #ffffff;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.3;
-}
-
-a, a:visited {
-    text-decoration: none;
-}
-
-span {
-    color: #26b82e;
-}
+@import "variables";
+@import "mixins";
+@import "globals";
+@import "header";
 
 .cards {
     display: grid;
     gap: 1.5rem;
+    padding: 2rem;
 
     @media (min-width: 59em){
         grid-template-columns: repeat(2, 1fr);
