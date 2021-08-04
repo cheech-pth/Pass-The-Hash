@@ -16,12 +16,24 @@
             <a href="/" class="header__logo">
                 <img src="source/header-desktop.png" alt="PassTheHash">
             </a>
+            <div class="drop_down">
+                <a href="#" id="dropdown_button" onclick="showMenu()" class="header__hamburger hide-for-desktop">
+                    <span></span>
+                    <span></span>
+                    <span></span>
 
-            <a href="#" class="header__hamburger hide-for-desktop">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
+                    <center>
+                        <!-- dropdown list items will show when we click the drop button --> 
+                        <div id="dropdown-content">
+                            <a href="#">Docs</a>
+                            <a href="#">About</a>
+                            <a href="https://github.com/cheech-pth">Github</a>
+                            <a href="https://discord.gg/utF8NmwxbE">Discord</a>
+                        </div>
+                     </center>
+                </a>
+            </div>
+            
 
             <div class="header__links hide-for-mobile">
                 <a href="#">Docs</a><a href="#">About</a><a href="https://github.com/cheech-pth">Github</a><a href="https://discord.gg/utF8NmwxbE">Discord</a>
@@ -64,4 +76,16 @@
     </section>
 
 </body>
+<script>
+    // When the user clicks the hamburger toggles between showing and hiding the content
+    //show and hide dropdown list item on button click
+    function showMenu() {
+         var click = document.getElementById("dropdown-content");
+         if(click.style.display ==="none") {
+            click.style.display ="block";
+         } else {
+            click.style.display ="none";
+         } 
+      }
+</script>
 </html>
