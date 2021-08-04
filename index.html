@@ -17,10 +17,16 @@
                 <img src="source/header-desktop.png" alt="PassTheHash">
             </a>
 
-            <a href="#" class="header__hamburger hide-for-desktop">
+            <a href="#" onclick="showMenu()" class="header__hamburger hide-for-desktop">
                 <span></span>
                 <span></span>
                 <span></span>
+
+                <div id="hamburger_dropdown" class="dropdown-content">
+                    <a href="#">one</a>
+                    <a href="#">two</a>
+                    <a href="#">three</a>
+                </div>
             </a>
 
             <div class="header__links hide-for-mobile">
@@ -64,4 +70,10 @@
     </section>
 
 </body>
+<script>
+    // When the user clicks the hamburger toggles between showing and hiding the content
+    function showMenu() {
+        document.getElementById("hamburger_dropdown").classList.toggle("show");
+    }
+</script>
 </html>

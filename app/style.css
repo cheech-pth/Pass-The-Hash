@@ -234,3 +234,19 @@ button:hover, .button:hover {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+/* Sets dropdown to hide menu by default" */
+.dropdown-content {
+  display: none;
+}
+
+/* Style for the dropdown links */
+.dropdown-content a {
+  display: block;
+  color: green;
+}
+
+/* Displays dropdown list on button click */
+.show {
+  Display: block;
+}
