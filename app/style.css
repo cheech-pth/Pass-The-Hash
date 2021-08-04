@@ -266,7 +266,3 @@ button:hover, .button:hover {
    padding-left: 10px;
    transition: background-color .5s;
 }
-
-#dropdown-content a:hover {
-  background-color: gold;
-}
