@@ -28,14 +28,53 @@
 
     &__links {
 
+        li { 
+            transition-duration: 0.5s;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+        }
+
+        ul li {
+
+            &:not(:last-child) {
+            margin-right: 30px;
+            }
+        }
+
+        ul li ul {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            min-width: 5rem;
+            display: none;
+            padding: 5px;
+            background-color: $lowOpacityGrey;
+            border-radius: 5px;
+        }
+
+        ul li ul li {
+            padding: 5px;
+            clear: both;
+            width: 100%;
+            text-align: center;
+        }
+
+        ul li:hover > ul,
+        ul li:focus-within > ul,
+        ul li ul:hover {
+          visibility: visible;
+          opacity: 1;
+          display: block;
+        }
+
         a {
             font-size: $font-small;
             color: $offWhite;
             transition: color 200ms ease-in-out;
-
-            &:not(:last-child){
-                margin-right: 40px;
-            }
 
             &:hover {
                 color: $darkWhite;

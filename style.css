@@ -97,15 +97,57 @@ button:hover, .button:hover {
   margin-bottom: 5px;
 }
 
+.header__links li {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.header__links ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header__links ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header__links ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  min-width: 5rem;
+  display: none;
+  padding: 5px;
+  background-color: rgba(144, 152, 152, 0.24);
+  border-radius: 5px;
+}
+
+.header__links ul li ul li {
+  padding: 5px;
+  clear: both;
+  width: 100%;
+  text-align: center;
+}
+
+.header__links ul li:hover > ul,
+.header__links ul li:focus-within > ul,
+.header__links ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
 .header__links a {
   font-size: 0.875rem;
   color: #f4f4f4;
   -webkit-transition: color 200ms ease-in-out;
   transition: color 200ms ease-in-out;
-}
-
-.header__links a:not(:last-child) {
-  margin-right: 40px;
 }
 
 .header__links a:hover {
