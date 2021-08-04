@@ -16,25 +16,7 @@
             <a href="/" class="header__logo">
                 <img src="source/header-desktop.png" alt="PassTheHash">
             </a>
-            <div class="drop_down hide-for-desktop">
-                <a href="#" id="dropdown_button" onclick="showMenu()" class="header__hamburger hide-for-desktop">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
-                    <center>
-                        <!-- dropdown list items will show when we click the drop button --> 
-                        <div id="dropdown-content">
-                            <a href="#">Docs</a>
-                            <a href="#">About</a>
-                            <a href="https://github.com/cheech-pth">Github</a>
-                            <a href="https://discord.gg/utF8NmwxbE">Discord</a>
-                        </div>
-                     </center>
-                </a>
-            </div>
             
-
             <div class="header__links hide-for-mobile">
                 <ul>
                     <li><a href="#">Docs</a></li>
@@ -50,6 +32,25 @@
             </div>
 
             <a href="#" class="button hide-for-mobile">Donate to PTH</a>
+
+            <div class="drop_down hide-for-desktop">
+                <a href="#" id="dropdown_button" onclick="showMenu()" class="header__hamburger hide-for-desktop">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <center class="hide-for-desktop">
+                        <!-- dropdown list items will show when we click the drop button --> 
+                        <div id="dropdown-content" class="hide-for-desktop">
+                            <a href="#">Docs</a>
+                            <a href="#">About</a>
+                            <a href="https://github.com/cheech-pth">Github</a>
+                            <a href="https://discord.gg/utF8NmwxbE">Discord</a>
+                        </div>
+                     </center>
+                </a>
+            </div>
+
         </nav>
     </header>
     <section class="cards">

@@ -59,12 +59,12 @@ button, .button {
 // Responsive
 .hide-for-mobile {
     @include breakpoint-down(medium){
-        display: none;
+        display: none !important;
     }
 }
     
 .hide-for-desktop {
     @include breakpoint-up(large){
-        display: none;
+        display: none !important;
     } 
 }

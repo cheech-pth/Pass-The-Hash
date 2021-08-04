@@ -1,3 +1,35 @@
+    /* Displays dropdown list on button click */
+    .show {
+        Display: block;
+      }
+      
+      /* set the position of dropdown */
+      .drop_down {
+        position: relative;
+        display: inline-block;
+      }
+      
+      /* provide css to background of list items */ 
+      #dropdown-content {
+        display: none;
+        position: absolute;
+        right: -32px;
+        background-color: #ddd;
+        min-width: 60px;
+      }
+      /* provide css to list items */ 
+      #dropdown-content a {
+         display: block;
+         font-size: 20px;
+         background-color: #ddd;
+         color: green;
+         text-decoration: none;
+         padding-bottom: 10px;
+         padding-right: 10px;
+         padding-left: 10px;
+         transition: background-color .5s;
+      }
+
 .header {
 
     nav {
@@ -25,38 +57,6 @@
             }
         }
     }
-
-    /* Displays dropdown list on button click */
-.show {
-    Display: block;
-  }
-  
-  /* set the position of dropdown */
-  .drop_down {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* provide css to background of list items */ 
-  #dropdown-content {
-    display: none;
-    position: absolute;
-    right: -32px;
-    background-color: #ddd;
-    min-width: 60px;
-  }
-  /* provide css to list items */ 
-  #dropdown-content a {
-     display: block;
-     font-size: 20px;
-     background-color: #ddd;
-     color: green;
-     text-decoration: none;
-     padding-bottom: 10px;
-     padding-right: 10px;
-     padding-left: 10px;
-     transition: background-color .5s;
-  }
 
     &__links {
 
