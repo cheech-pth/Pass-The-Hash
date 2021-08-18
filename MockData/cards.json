@@ -3,18 +3,21 @@
         {
             "id": "1",
             "title": "Escalation",
-            "description": "Escalation Involves escalating privilege"
+            "description": "Escalation Involves escalating privilege",
+            "image": "https://media.discordapp.net/attachments/521595368736161794/840242311396851743/unknown.png"
         },
 
         {
             "id": "2",
             "title": "Hashing and Cracking",
-            "description": "Hashing is usually an algorithm, Cracking is cracking the hash!"
+            "description": "Hashing is usually an algorithm, Cracking is cracking the hash!",
+            "image": "https://media.discordapp.net/attachments/521595368736161794/840242311396851743/unknown.png"
         },
         {
             "id": "3",
             "title": "Linux",
-            "description": "GNU/Linux is a free open source operating system!"
+            "description": "GNU/Linux is a free open source operating system!",
+            "image": "https://media.discordapp.net/attachments/521595368736161794/840242311396851743/unknown.png"
         }
     ]
 }
