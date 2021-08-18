@@ -1,5 +1,4 @@
-{
-    "card": [
+[
         {
             "id": "1",
             "title": "Escalation",
@@ -20,4 +19,3 @@
             "image": "https://media.discordapp.net/attachments/521595368736161794/840242311396851743/unknown.png"
         }
     ]
-}
