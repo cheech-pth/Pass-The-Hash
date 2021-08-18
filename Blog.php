@@ -3,7 +3,7 @@
 <body>
 
     <?php 
-    include "/includes/header.php";
+    include("includes/header.php");
 
     $hello = "Hello, world!";
     $games = array("Runescape", "WoW", "LoL", "Game");
