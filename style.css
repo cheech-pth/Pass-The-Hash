@@ -319,6 +319,9 @@ button:hover, .button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-container > .img-pth-logo {

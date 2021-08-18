@@ -14,6 +14,8 @@
     }
 
     echo $hello;
+
+    include("includes/footer.php");
     ?>
 </body>
 </html>
