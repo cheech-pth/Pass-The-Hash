@@ -1,0 +1,20 @@
+{
+    "card": [
+        {
+            "id": "1",
+            "title": "Escalation",
+            "description": "Escalation Involves escalating privilege"
+        },
+
+        {
+            "id": "2",
+            "title": "Hashing and Cracking",
+            "description": "Hashing is usually an algorithm, Cracking is cracking the hash!"
+        },
+        {
+            "id": "3",
+            "title": "Linux",
+            "description": "GNU/Linux is a free open source operating system!"
+        }
+    ]
+}
