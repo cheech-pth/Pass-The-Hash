@@ -21,7 +21,7 @@
                 <ul>
                     <li><a href="#">Docs</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="/Blog.html">Blog</a></li>
+                    <li><a href="/Blog.php">Blog</a></li>
                     <li><a href="#">Github</a>
                         <ul class="dropdown-nav">
                             <li><a href="https://github.com/coreyo-git">Coreyo-git</a></li>
@@ -48,7 +48,7 @@
                             <a href="#">About</a>
                             <a href="https://github.com/cheech-pth">Github</a>
                             <a href="https://discord.gg/utF8NmwxbE">Discord</a>
-                            <a href="/Blog.html">Blog</a>
+                            <a href="/Blog.php">Blog</a>
                         </div>
                      </center>
                 </a>

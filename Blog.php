@@ -7,8 +7,11 @@
     <title>Blog</title>
 </head>
 <body>
-    <div>
-        Hello
-    </div>
+
+    <?php 
+    $hello = "Hello, world!";
+    echo "Hello";
+    echo $hello;
+    ?>
 </body>
 </html>
