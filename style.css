@@ -310,4 +310,29 @@ button:hover, .button:hover {
     grid-row: 2/3;
   }
 }
+
+.footer-container {
+  max-height: 250px;
+  height: 100%;
+  background-color: #0a0a0a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container > .img-pth-logo {
+  max-width: 100px;
+  max-height: 100px;
+  padding: 5px;
+  margin: 0 25px;
+}
+
+.footer-container > .footer-text {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 25px;
+  padding: 5px;
+  font-size: 1rem;
+}
 /*# sourceMappingURL=style.css.map */
