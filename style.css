@@ -93,8 +93,10 @@ button:hover, .button:hover {
   display: none;
   position: absolute;
   right: -32px;
-  background-color: #ddd;
+  background-color: red;
   min-width: 60px;
+  max-width: 100vh;
+  height: 100%;
 }
 
 /* provide css to list items */

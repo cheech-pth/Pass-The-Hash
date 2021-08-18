@@ -14,8 +14,10 @@
         display: none;
         position: absolute;
         right: -32px;
-        background-color: #ddd;
+        background-color: rgb(255, 0, 0);
         min-width: 60px;
+        max-width: 100vh;
+        height: 100%;
       }
       /* provide css to list items */ 
       #dropdown-content a {
