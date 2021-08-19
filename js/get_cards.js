@@ -25,5 +25,5 @@ for (var i = 0; i < data.length; i++) {
     div.className=""
     div.innerHTML = 'title: ' + data[i].title + ' ' + data[i].description + ' ' + data[i].image;
     mainContainer.appendChild(div);
-}
+    }
 }
