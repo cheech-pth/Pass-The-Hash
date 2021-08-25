@@ -8,17 +8,17 @@ class Connection {
 
    // Function to assign params to database.ini file
    public function connect() {
-      $params = parse_ini_file('Data/database.ini');
+      $params = parse_ini_file('database.ini');
       if ($params === false) {
          throw new \Exception("Error in database config file");
       }
 
-      $conStr = sprintf("pgsql:host=%s;port=%d;dbname=%s;user=%s;passwd=%s",
+      $conStr = sprintf("pgsql:host=%s;port=%d;dbname=%s;user=%s;password=%s",
                $params['host'],
                $params['port'],
-               $params['dbname'],
+               $params['database'],
                $params['user'],
-               $params['passwd']);
+               $params['password']);
 
       $pdo = new \PDO($conStr);
       $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
