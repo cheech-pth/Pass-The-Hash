@@ -335,7 +335,6 @@ button:hover, .button:hover {
   max-width: 500px;
   width: 100%;
   margin: auto;
-  padding: 10px;
   font-size: 1rem;
 }
 @media (max-width: 36em) {
@@ -357,7 +356,6 @@ button:hover, .button:hover {
     width: 100%;
     max-height: 60px;
     height: 100%;
-    padding: 10px;
     font-size: 1rem;
     text-align: center;
     justify-content: center;
