@@ -3,6 +3,16 @@ include("includes/header.php");
 include("includes/body.php");
 include("includes/footer.php");
 
+require 'vendor/autoload.php';
+
+use PassTheHash\Connection as Connection;
+
+try {
+   Connection::get()->connect();
+   echo"Established";
+} catch (\PDOException $e) {
+   echo $e->getMessage();
+}
 ?>
    
 
