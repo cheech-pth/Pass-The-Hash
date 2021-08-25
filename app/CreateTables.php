@@ -1,7 +1,7 @@
 <?php 
 
 namespace PassTheHash;
-
+## Seeds the database with tables and the database schema; TODO: Add additional Users table, for author.
 class CreateTable {
     private $pdo;
     public function __construct($pdo) {
