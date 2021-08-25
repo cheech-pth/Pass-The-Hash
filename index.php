@@ -14,8 +14,6 @@ try {
    echo $e->getMessage();
 }
 ?>
-   
-
 </body>
 <script>
     // When the user clicks the hamburger toggles between showing and hiding the content
