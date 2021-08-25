@@ -33,6 +33,5 @@ class Connection {
        
        return static::$conn;
    }
-
 }
 ?>
