@@ -1,7 +1,7 @@
 <?php
 
 namespace PassTheHash;
-
+#Creating Connection class to form a private singleton instance of the DB connection
 class Connection {
 
    private static $conn;
