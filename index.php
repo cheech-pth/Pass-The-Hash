@@ -2,6 +2,8 @@
 <html lang="en">
 <?php 
 
+namespace PassTheHash;
+
 include("includes/header.php");
 include("includes/body.php");
 include("includes/footer.php");
