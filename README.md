@@ -20,5 +20,11 @@ The Team/Site name is in reference to a cryptographic and security technique kno
 - Run ` php -S localhost:3001 ` will start a local server
 - Navigate to the link via browser
 
+## Database Settings:
+### Postgresql
+**Dependencies:**
+- extension=pdo.so
+- extension=pdo_pgsql.so
+
 
 
