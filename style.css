@@ -318,10 +318,10 @@ button:hover, .button:hover {
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
   position: fixed;
   bottom: 0;
   width: 100%;
+  padding-top: 0.4em;
 }
 
 .footer-container > .img-pth-logo {
@@ -334,8 +334,33 @@ button:hover, .button:hover {
 .footer-container > .footer-text {
   max-width: 500px;
   width: 100%;
-  margin: 0 25px;
-  padding: 5px;
+  margin: auto;
+  padding: 10px;
   font-size: 1rem;
+}
+@media (max-width: 36em) {
+
+  .footer-container {
+    max-height: 75px;
+    margin-top: 20px;
+    position: initial;
+  }
+  .footer-container > .img-pth-logo {
+    max-width: 50px;
+    max-height: 50px;
+    padding: 5px;
+    margin: 0 25px;
+  }
+  
+  .footer-container > .footer-text {
+    max-width: 400px;
+    width: 100%;
+    max-height: 60px;
+    height: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
