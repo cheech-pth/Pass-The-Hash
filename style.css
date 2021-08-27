@@ -361,4 +361,44 @@ button:hover, .button:hover {
     justify-content: center;
   }
 }
+
+#particles-js {
+  height: 500px;
+  width: 100%;
+}
+
+.landing-image {
+  position: absolute;
+  bottom: 65%;
+}
+
+.landing-section {
+  height: 47.5vh;
+  background-image: url(source/landing-img.png), linear-gradient(to bottom, #3ca54a, #286e31);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -10% 10%;
+  background-blend-mode: soft-light;
+}
+
+.custom-shape-divider-bottom-1630063634 {
+  position: absolute;
+  bottom: 47%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1630063634 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 106px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1630063634 .shape-fill {
+  fill: #3ca54a;
+}
 /*# sourceMappingURL=style.css.map */
