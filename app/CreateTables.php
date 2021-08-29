@@ -1,13 +1,12 @@
 <?php 
 
 namespace PassTheHash;
-## Seeds the database with tables and the database schema; TODO: Add additional Users table, for author.
+## Seeds the database with tables and the database schema; 
 class CreateTable {
     private $pdo;
     public function __construct($pdo) {
         $this->pdo = $pdo;
     }
-    # List of sql statements TODO: Loop if extras are added, build function anyway?
     public function createTable() {
         $sqlList = [
             'CREATE TABLE IF NOT EXISTS user (
@@ -54,7 +53,16 @@ class CreateTable {
         return $this;
     }
 
+    // returns all tables within the database, debugging only
     public function getTables() {
-     //TODO: this function   
+        $tables = $this->pdo->query(
+            "SELECT table_name FROM information_schema.tables
+             WHERE table_schema= 'public' 
+             AND table_type='BASE TABLE' 
+             ORDER BY table_name");
+        $tableList = [];
+        while ($row = $tables->fetch(\PDO::FETCH_ASSOC)) {
+            $tableList[] = $row['table_name'];
+        }
     }
 }

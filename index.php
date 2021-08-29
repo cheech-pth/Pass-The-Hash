@@ -7,12 +7,15 @@ require 'vendor/autoload.php';
 
 use PassTheHash\Connection as Connection;
 
+// Connects and prints result to screen for debugging purposes
 try {
    Connection::get()->connect();
    echo"Established";
 } catch (\PDOException $e) {
    echo $e->getMessage();
 }
+
+
 ?>
 </body>
 <script>
