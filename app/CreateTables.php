@@ -64,5 +64,7 @@ class CreateTable {
         while ($row = $tables->fetch(\PDO::FETCH_ASSOC)) {
             $tableList[] = $row['table_name'];
         }
+        
+        return $tableList;
     }
 }
