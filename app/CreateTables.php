@@ -9,38 +9,38 @@ class CreateTables {
     }
     public function createTable() {
         $sqlList = [
-            'CREATE TABLE IF NOT EXISTS user (
-                user_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            'CREATE TABLE IF NOT EXISTS users (
+                user_id SERIAL PRIMARY KEY,
                 title INTEGER NOT NULL,
                 username VARCHAR(50) NOT NULL,
                 email VARCHAR(256) NOT NULL,
                 about VARCHAR(500),
                 pass_salt VARCHAR NOT NULL,
                 pass_hash VARCHAR NOT NULL,
-                created DATETIME NOT NULL,
+                created DATE NOT NULL,
                 total_posts INTEGER,
                 FOREIGN KEY (title) REFERENCES title_lookup(id)
                 );',
             // Lookup table for user titles e.g. Admin, User, Moderator etc
             'CREATE TABLE IF NOT EXISTS title_lookup (
-                id INTEGER PRIMARY KEY,
+                id SERIAL PRIMARY KEY,
                 title VARCHAR(50) NOT NULL
             );',
             // Stores historical data of users
             'CREATE TABLE IF NOT EXISTS user_detail (
-                user_id INTEGER,
-                last_login DATETIME,              
+                user_id INT,
+                last_login DATE,              
                 login_ip INET,
                 location VARCHAR
                 );',
             'CREATE TABLE IF NOT EXISTS blog (
-                blog_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                blog_id SERIAL PRIMARY KEY,
                 author INTEGER NOT NULL,
                 title VARCHAR(256) NOT NULL,
                 intro TEXT NOT NULL, 
                 body TEXT NOT NULL,
                 summary TEXT NOT NULL,
-                FOREIGN KEY (author) REFERENCES user(user_id)
+                FOREIGN KEY (author) REFERENCES users(user_id)
         );'];
 
         #loops through sqlList
