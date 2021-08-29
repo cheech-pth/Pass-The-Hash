@@ -9,7 +9,7 @@ class TableSeed
        $this->pdo = $pdo;
     }
 
-    // TODO: This function
+    // TODO: This function after I create some base Insert functions for non debug use.
     public function SeedTables() {
         $queryList = [
             'INSERT'
