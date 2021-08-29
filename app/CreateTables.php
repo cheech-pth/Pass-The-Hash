@@ -9,6 +9,11 @@ class CreateTables {
     }
     public function createTable() {
         $sqlList = [
+            // Lookup table for user titles e.g. Admin, User, Moderator etc
+            'CREATE TABLE IF NOT EXISTS title_lookup (
+                id SERIAL PRIMARY KEY,
+                title VARCHAR(50) NOT NULL
+            );',
             'CREATE TABLE IF NOT EXISTS users (
                 user_id SERIAL PRIMARY KEY,
                 title INTEGER NOT NULL,
@@ -21,11 +26,6 @@ class CreateTables {
                 total_posts INTEGER,
                 FOREIGN KEY (title) REFERENCES title_lookup(id)
                 );',
-            // Lookup table for user titles e.g. Admin, User, Moderator etc
-            'CREATE TABLE IF NOT EXISTS titles_lookup (
-                id SERIAL PRIMARY KEY,
-                title VARCHAR(50) NOT NULL
-            );',
             // Stores historical data of users
             'CREATE TABLE IF NOT EXISTS user_details (
                 user_id INT,
@@ -37,6 +37,7 @@ class CreateTables {
                 blog_id SERIAL PRIMARY KEY,
                 author INTEGER NOT NULL,
                 title VARCHAR(256) NOT NULL,
+                description VARCHAR(500) NOT NULL,
                 intro TEXT NOT NULL, 
                 body TEXT NOT NULL,
                 summary TEXT NOT NULL,
