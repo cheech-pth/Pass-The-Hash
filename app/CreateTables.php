@@ -2,7 +2,7 @@
 
 namespace PassTheHash;
 ## Seeds the database with tables and the database schema; 
-class CreateTable {
+class CreateTables {
     private $pdo;
     public function __construct($pdo) {
         $this->pdo = $pdo;
