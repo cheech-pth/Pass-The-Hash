@@ -38,7 +38,7 @@ class CreateTables {
                 author INTEGER NOT NULL,
                 title VARCHAR(256) NOT NULL,
                 description VARCHAR(500) NOT NULL,
-                intro TEXT NOT NULL, 
+                introduction TEXT NOT NULL, 
                 body TEXT NOT NULL,
                 summary TEXT NOT NULL,
                 FOREIGN KEY (author) REFERENCES users(user_id)
