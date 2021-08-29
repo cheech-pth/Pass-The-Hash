@@ -21,13 +21,11 @@ class CreateTables {
                 total_posts INTEGER,
                 FOREIGN KEY (title) REFERENCES title_lookup(id)
                 );',
-
             // Lookup table for user titles e.g. Admin, User, Moderator etc
             'CREATE TABLE IF NOT EXISTS title_lookup (
                 id INTEGER PRIMARY KEY,
                 title VARCHAR(50) NOT NULL
             );',
-
             // Stores historical data of users
             'CREATE TABLE IF NOT EXISTS user_detail (
                 user_id INTEGER,
@@ -35,7 +33,6 @@ class CreateTables {
                 login_ip INET,
                 location VARCHAR
                 );',
-
             'CREATE TABLE IF NOT EXISTS blog (
                 blog_id INTEGER PRIMARY KEY AUTOINCREMENT,
                 author INTEGER NOT NULL,
