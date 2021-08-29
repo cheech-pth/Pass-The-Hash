@@ -36,7 +36,7 @@
                 "localhost:3000"
             ],
             "program": "",
-            "cwd": "${workspaceRoot}",
+            "cwd": "${workspaceRoot}/views/",
             "port": 9003,
             "serverReadyAction": {
                 "pattern": "Development Server \\(http://localhost:([0-9]+)\\) started",
