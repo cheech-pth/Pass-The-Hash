@@ -16,7 +16,7 @@
 
     echo $hello;
 
-    include("includes/footer.php");
+    include("includes../footer.php");
     ?>
     <div id="cards"></div>
 
