@@ -13,7 +13,7 @@ class CreateTables {
                 user_id SERIAL PRIMARY KEY,
                 title INTEGER NOT NULL,
                 username VARCHAR(50) NOT NULL,
-                email VARCHAR(256) NOT NULL,
+                email VARCHAR(256) NOT NULL UNIQUE,
                 about VARCHAR(500),
                 pass_salt VARCHAR NOT NULL,
                 pass_hash VARCHAR NOT NULL,
@@ -22,18 +22,18 @@ class CreateTables {
                 FOREIGN KEY (title) REFERENCES title_lookup(id)
                 );',
             // Lookup table for user titles e.g. Admin, User, Moderator etc
-            'CREATE TABLE IF NOT EXISTS title_lookup (
+            'CREATE TABLE IF NOT EXISTS titles_lookup (
                 id SERIAL PRIMARY KEY,
                 title VARCHAR(50) NOT NULL
             );',
             // Stores historical data of users
-            'CREATE TABLE IF NOT EXISTS user_detail (
+            'CREATE TABLE IF NOT EXISTS user_details (
                 user_id INT,
                 last_login DATE,              
                 login_ip INET,
                 location VARCHAR
                 );',
-            'CREATE TABLE IF NOT EXISTS blog (
+            'CREATE TABLE IF NOT EXISTS blogs (
                 blog_id SERIAL PRIMARY KEY,
                 author INTEGER NOT NULL,
                 title VARCHAR(256) NOT NULL,
