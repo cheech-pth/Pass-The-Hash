@@ -6,7 +6,7 @@ class Connection {
 
    private static $conn;
 
-   // Function to assign params to database.ini file
+   // Function to assign params to database.ini file elements
    public function connect() {
       $params = parse_ini_file('database.ini');
       if ($params === false) {

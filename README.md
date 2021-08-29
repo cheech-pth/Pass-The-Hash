@@ -7,9 +7,8 @@ The Team/Site name is in reference to a cryptographic and security technique kno
 - **PHP version 7.4.22**
 
 ## Todo list:
-- Get a functioning request with mock data to display on front end
-- Setup a database, setup general schema of data and relationships
-- Configure DB connection string and manually craft requests | or maybe ORM?
+- Add classes as a base interface for DB query functions.
+- Setup DB seeding for lookup tables and mock data to work with
 - Add login and authentication.
 - Build for blog post creation. 
 
