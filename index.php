@@ -12,8 +12,8 @@ use PassTheHash\CreateTables as CreateTables;
 // Connects and query's all tables prints result to screen for debugging purposes
 try {
    // Connect to Postgres Database
-   Connection::get()->connect();
-   echo"Established";
+   $pdo = Connection::get()->connect();
+   //echo"Established";
 
    // Instantiate instance new instance of CreateTable class
    $tableCreater = new CreateTables($pdo);
