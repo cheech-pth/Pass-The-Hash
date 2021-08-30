@@ -5,6 +5,7 @@
         "NTLM",
         "Runescape",
         "autoload",
+        "flexbox",
         "pgsql",
         "phpdotenv"
     ]

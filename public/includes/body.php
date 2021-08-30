@@ -10,7 +10,7 @@
  <a href="#" class="card">
      <div class="card__image" style="background-image:url(https://media.discordapp.net/attachments/521595368736161794/840242311396851743/unknown.png);"></div>
      <div class="card__content">
-         <div class="card__title">Escelation</div>
+         <div class="card__title">Escalation</div>
          <div class="class__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, incidunt! Ullam at, esse sapiente eius nulla sequi! Doloremque voluptas quaerat dolorum et, doloribus facere. Sit impedit enim atque consectetur quam.
          </div>
      </div>

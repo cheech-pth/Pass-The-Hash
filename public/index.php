@@ -1,7 +1,7 @@
 <?php 
 include("includes/header.php");
 include("includes/body.php");
-include("includes/footer.php");
+
 
 require '../vendor/autoload.php';
 
@@ -29,9 +29,7 @@ try {
    echo $e->getMessage();
 }
 
-
-
-
+include("includes/footer.php");
 ?>
 </body>
 <script>
