@@ -1,7 +1,9 @@
 {
     "autoload": {
         "psr-4": {
-            "PassTheHash\\": "app/"
+            "app\\": "./app",
+            "models\\": "./app/models",
+            "controllers\\": "./app/controllers"
         }
     },
     "require": {

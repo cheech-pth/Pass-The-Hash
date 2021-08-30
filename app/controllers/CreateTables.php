@@ -1,6 +1,6 @@
 <?php 
 
-namespace PassTheHash;
+namespace controllers;
 ## Seeds the database with tables and the database schema; 
 class CreateTables {
     private $pdo;

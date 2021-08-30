@@ -5,15 +5,15 @@ include("includes/footer.php");
 
 require '../vendor/autoload.php';
 
-use PassTheHash\Connection as Connection;
-use PassTheHash\CreateTables as CreateTables;
+use controllers\Connection as Connection;
+use controllers\CreateTables as CreateTables;
 
 // Connects and prints result to screen for debugging purposes
 // Connects and query's all tables prints result to screen for debugging purposes
 try {
    // Connect to Postgres Database
    $pdo = Connection::get()->connect();
-   //echo"Established";
+   echo"Established";
 
    // Instantiate instance new instance of CreateTable class
    $tableCreater = new CreateTables($pdo);

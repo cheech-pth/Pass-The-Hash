@@ -1,6 +1,5 @@
 <?php
-namespace PassTheHash;
-
+namespace controllers;
 // Connects and inserts mock data into the database for debugging purposes.
 class TableSeed
 {

@@ -7,12 +7,24 @@ namespace Composer\Autoload;
 class ComposerStaticInitf461f647ee9e7185ce93a4bd37fc8e71
 {
     public static $files = array (
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'm' => 
+        array (
+            'models\\' => 7,
+        ),
+        'c' => 
+        array (
+            'controllers\\' => 12,
+        ),
+        'a' => 
+        array (
+            'app\\' => 4,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
@@ -22,7 +34,6 @@ class ComposerStaticInitf461f647ee9e7185ce93a4bd37fc8e71
         'P' => 
         array (
             'PhpOption\\' => 10,
-            'PassTheHash\\' => 12,
         ),
         'G' => 
         array (
@@ -35,6 +46,18 @@ class ComposerStaticInitf461f647ee9e7185ce93a4bd37fc8e71
     );
 
     public static $prefixDirsPsr4 = array (
+        'models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/models',
+        ),
+        'controllers\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/controllers',
+        ),
+        'app\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
@@ -50,10 +73,6 @@ class ComposerStaticInitf461f647ee9e7185ce93a4bd37fc8e71
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
-        ),
-        'PassTheHash\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
         ),
         'GrahamCampbell\\ResultType\\' => 
         array (
