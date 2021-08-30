@@ -2,11 +2,16 @@
 include("includes/header.php");
 include("includes/body.php");
 
-
 require '../vendor/autoload.php';
 
 use controllers\Connection as Connection;
 use controllers\CreateTables as CreateTables;
+use Dotenv\Dotenv;
+
+require __DIR__.'../vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 // Connects and prints result to screen for debugging purposes
 // Connects and query's all tables prints result to screen for debugging purposes
