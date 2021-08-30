@@ -4,6 +4,8 @@
         "Coreyo",
         "NTLM",
         "Runescape",
-        "pgsql"
+        "autoload",
+        "pgsql",
+        "phpdotenv"
     ]
 }
